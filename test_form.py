@@ -15,20 +15,20 @@ def test_case_practice_form():
 
     s('#currentAddress').type('Oceanic')
 
-    element = basePage(s(subjects_input))
+    element = page_module(s(subjects_input))
     element.select_element_in_list('g', select_element_in_subject)
 
-    element = basePage(s(date_of_birth_input))
+    element = page_module(s(date_of_birth_input))
     element.select_date_in_datepicker(date_of_birth)
 
     s(gender_select_male).click()
 
     s(hobbies_select_sports).click()
 
-    element = basePage(s(list_state))
+    element = page_module(s(list_state))
     element.select_element_in_dropdown(element_in_list_state)
 
-    element = basePage(s(list_city))
+    element = page_module(s(list_city))
     element.select_element_in_dropdown(element_in_list_city)
 
     add_file(send_picture_button, file_name=file_name)
