@@ -6,7 +6,7 @@ now_date = datetime.datetime.now()
 str(now_date)
 
 
-class basePage:
+class page_module:
     def __init__(self, element: Element):
         self.element = element
 
