@@ -12,7 +12,3 @@ def add_file(element, file_name):
 def url_open_size(url, width=1920, height=1080):
     browser.open(url)
     browser.config.driver.set_window_size(width, height)
-
-
-def check_expected_result_in_table(elements, *args):
-    ss(elements).should(have.texts(*args))
