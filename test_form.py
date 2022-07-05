@@ -1,6 +1,5 @@
 from controls.page_module import *
 from env import *
-from selene.core.entity import Element
 
 def test_case_practice_form():
     url_open_size('/automation-practice-form')
