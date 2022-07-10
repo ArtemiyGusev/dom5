@@ -1,4 +1,4 @@
-from controls.page_module import now_date
+from controls.datepicker import now_date
 
 table_name = 'table td'
 send_data = '#submit'
